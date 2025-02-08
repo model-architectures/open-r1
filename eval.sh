@@ -1,5 +1,5 @@
 MODEL=../X0/ckpt/qwen2.5-7b_sft_limo/global_step_12
-MODEL_ARGS="pretrained=$MODEL,dtype=bfloat16,max_model_length=8192,gpu_memory_utilisation=0.8"
+MODEL_ARGS="pretrained=$MODEL,dtype=bfloat16,max_model_length=32768,gpu_memory_utilisation=0.8"
 OUTPUT_DIR=data/evals/$MODEL
 
 
