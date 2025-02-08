@@ -10,7 +10,7 @@ MODEL_NAME=$1
 # Construct the model path using the provided model name
 MODEL="../X0/ckpt/${MODEL_NAME}/global_step_12"
 # Set the model arguments
-MODEL_ARGS="pretrained=$MODEL,dtype=bfloat16,max_model_length=36864,gpu_memory_utilisation=0.8"
+MODEL_ARGS="pretrained=$MODEL,dtype=bfloat16,max_model_length=36864,gpu_memory_utilisation=0.9"
 # Define the output directory
 OUTPUT_DIR="data/evals/$MODEL"
 
