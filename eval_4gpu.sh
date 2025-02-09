@@ -9,7 +9,7 @@ fi
 MODEL_NAME=$1
 
 # Construct the model path using the provided model name
-MODEL="../X0/ckpt/${MODEL_NAME}/global_step_12"
+MODEL="../X0/ckpt/${MODEL_NAME}"
 # Set the model arguments
 MODEL_ARGS="pretrained=$MODEL,dtype=bfloat16,tensor_parallel_size=$NUM_GPUS,max_model_length=36864,gpu_memory_utilisation=0.9"
 # Define the output directory
