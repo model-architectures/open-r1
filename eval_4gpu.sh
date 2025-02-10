@@ -15,6 +15,8 @@ MODEL_ARGS="pretrained=$MODEL,dtype=bfloat16,tensor_parallel_size=$NUM_GPUS,max_
 # Define the output directory
 OUTPUT_DIR="data/evals/$MODEL"
 
+export VLLM_WORKER_MULTIPROC_METHOD=spawn
+
 # AIME 2024
 #TASK=aime24
 # Run lighteval for the AIME 2024 task (currently commented out)
