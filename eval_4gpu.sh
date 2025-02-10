@@ -26,6 +26,7 @@ OUTPUT_DIR="data/evals/$MODEL"
 # MATH - 500
 TASK=math_500
 # Run lighteval for the MATH-500 task
+export VLLM_WORKER_MULTIPROC_METHOD=spawn
 lighteval vllm $MODEL_ARGS "custom|$TASK|0|0" \
     --custom-tasks src/open_r1/evaluate.py \
     --use-chat-template \
