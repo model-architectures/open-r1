@@ -2,7 +2,7 @@
 #SBATCH --job-name=deepseek-r1-generation
 #SBATCH --partition=hopper-prod
 #SBATCH --qos=normal
-#SBATCH --nodes=2
+#SBATCH --nodes=1
 #SBATCH --exclusive
 #SBATCH --gpus-per-node=8
 #SBATCH --output=./logs/%x-%j.out
